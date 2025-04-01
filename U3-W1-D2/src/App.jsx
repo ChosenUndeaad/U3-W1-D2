@@ -4,6 +4,7 @@ import React from "react";
 import MyNav from "./Navbar";
 import MyFooter from "./Footer";
 import WelcomeAlert from "./Welcome";
+import AllTheBooks from "./AllTheBooks";
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
       </div>
       <MyFooter />
       <WelcomeAlert />
+      <div>
+        <AllTheBooks />
+      </div>
     </>
   );
 };
