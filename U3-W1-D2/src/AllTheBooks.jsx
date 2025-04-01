@@ -49,8 +49,6 @@ const AllTheBooks = () => {
 
   return (
     <Container>
-      <h2 className='text-center my-4'>All The Books</h2>
-
       {/* Sezione Fantasy */}
       <h3 className='my-3'>Fantasy</h3>
       <Row>{renderBooks(books.fantasy)}</Row>
