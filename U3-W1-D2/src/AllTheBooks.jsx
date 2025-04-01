@@ -28,9 +28,9 @@ const AllTheBooks = () => {
   }, []);
 
   const renderBooks = (booksArray) => {
-    return booksArray.slice(0, 8).map((book) => (
+    return booksArray.slice(0, 9).map((book) => (
       <Col key={book.asin} md={4} className='p-4 bg-dark text-light'>
-        <Card>
+        <Card className='h-100 d-flex flex-column'>
           <Card.Img variant='top' src={book.img} alt={book.title} />
           <Card.Body>
             <Card.Title>{book.title}</Card.Title>
