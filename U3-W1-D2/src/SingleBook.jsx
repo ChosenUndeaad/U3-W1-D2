@@ -1,22 +1,34 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { Component } from "react";
+import { Button, Card } from "react-bootstrap";
+import "./index.css";
 
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+class SingleBook extends Component {
+  state = {
+    selected: false,
+  };
 
-const SingleBook = ({ book }) => {
-  return (
-    <Card
-      style={{ width: "18rem", margin: "10px" }}
-      className='p-4 bg-dark text-light h-100'
-    >
-      <Card.Img variant='top' src={book.img} alt={book.title} />
-      <Card.Body>
-        <Card.Title>{book.title}</Card.Title>
-        <Button variant='primary'>More Info</Button>
-      </Card.Body>
-    </Card>
-  );
-};
+  render() {
+    const { book } = this.props;
+    return (
+      <Card
+        style={{ width: "18rem", margin: "10px" }}
+        className={`p-4 bg-dark text-light h-100 ${
+          this.state.selected ? "selectedBook" : ""
+        }`}
+        onClick={() => {
+          this.setState({
+            selected: !this.state.selected,
+          });
+        }}
+      >
+        <Card.Img variant='top' src={book.img} alt={book.title} />
+        <Card.Body>
+          <Card.Title>{book.title}</Card.Title>
+          <Button variant='primary'>{book.price} € - Acquista</Button>
+        </Card.Body>
+      </Card>
+    );
+  }
+}
 
 export default SingleBook;

@@ -11,6 +11,7 @@ import historyBooks from "./assets//history.json";
 import horrorBooks from "./assets//horror.json";
 import romanceBooks from "./assets//romance.json";
 import scifiBooks from "./assets//scifi.json";
+import "./index.css";
 
 const App = () => {
   return (
@@ -22,19 +23,19 @@ const App = () => {
       <MyFooter />
       <WelcomeAlert />
       <div>
-        <h1 className='text-center mb-4'>Fantasy Books</h1>
+        <h1 className='text-center mt-4'>Fantasy Books</h1>
         <BookList books={fantasyBooks} />
 
-        <h1 className='text-center mb-4'>History Books</h1>
+        <h1 className='text-center mt-4'>History Books</h1>
         <BookList books={historyBooks} />
 
-        <h1 className='text-center mb-4'>History Books</h1>
+        <h1 className='text-center mt-4'>Horror Books</h1>
         <BookList books={horrorBooks} />
 
-        <h1 className='text-center mb-4'>History Books</h1>
+        <h1 className='text-center mt-4'>Romance Books</h1>
         <BookList books={romanceBooks} />
 
-        <h1 className='text-center mb-4'>History Books</h1>
+        <h1 className='text-center mt-4'>Sci-Fi Books</h1>
         <BookList books={scifiBooks} />
       </div>
     </>
