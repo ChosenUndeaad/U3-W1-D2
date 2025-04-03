@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Card } from "react-bootstrap";
-import "./index.css";
+import "../index.css";
 
 class SingleBook extends Component {
   state = {
@@ -26,6 +26,7 @@ class SingleBook extends Component {
           <Card.Title>{book.title}</Card.Title>
           <Button variant='primary'>{book.price} € - Acquista</Button>
         </Card.Body>
+        {this.state.selected && <CommentArea />}
       </Card>
     );
   }

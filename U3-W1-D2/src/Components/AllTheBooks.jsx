@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
 
 // Importa i file JSON per ciascuna categoria
-import fantasyBooks from "./assets/fantasy.json";
-import historyBooks from "./assets//history.json";
-import horrorBooks from "./assets//horror.json";
-import romanceBooks from "./assets//romance.json";
-import scifiBooks from "./assets//scifi.json";
+import fantasyBooks from "../assets/fantasy.json";
+import historyBooks from "../assets/history.json";
+import horrorBooks from "../assets/horror.json";
+import romanceBooks from "../assets/romance.json";
+import scifiBooks from "../assets/scifi.json";
 
 const AllTheBooks = () => {
   const [books, setBooks] = useState({

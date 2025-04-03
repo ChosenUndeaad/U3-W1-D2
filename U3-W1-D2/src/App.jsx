@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import React from "react";
-import MyNav from "./Navbar";
-import MyFooter from "./Footer";
-import WelcomeAlert from "./Welcome";
+import MyNav from "./Components/Navbar";
+import MyFooter from "./Components/Footer";
+import WelcomeAlert from "./Components/Welcome";
 //import AllTheBooks from "./AllTheBooks";
-import BookList from "./BookList";
+import BookList from "./Components/BookList";
 import fantasyBooks from "./assets/fantasy.json";
 import historyBooks from "./assets//history.json";
 import horrorBooks from "./assets//horror.json";
