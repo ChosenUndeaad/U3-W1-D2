@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
+import CommentList from "./CommentList";
 
 class CommentArea extends Component {
   state = {
-    comments: [], // Stato iniziale per i commenti
+    comments: [],
   };
 
   componentDidMount() {
@@ -33,6 +34,7 @@ class CommentArea extends Component {
       <Row>
         <Col>
           <h3>Recensioni</h3>
+          <CommentList />
         </Col>
       </Row>
     );
