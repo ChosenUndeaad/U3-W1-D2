@@ -1,4 +1,3 @@
 .selectedBook {
-  border: red solid;
-  border-width: 2px;
+  border: 2px red solid !important;
 }
