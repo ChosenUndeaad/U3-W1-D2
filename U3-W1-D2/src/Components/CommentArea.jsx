@@ -31,12 +31,12 @@ class CommentArea extends Component {
 
   render() {
     return (
-      <Row>
-        <Col>
-          <h3>Recensioni</h3>
-          <CommentList />
-        </Col>
-      </Row>
+      <div className='text-center'>
+        {this.state.isLoading && <Loading />}
+        {this.state.isError && <Error />}
+        <AddComment asin={this.props.asin} />
+        <CommentList commentsToShow={this.state.comments} />
+      </div>
     );
   }
 }
